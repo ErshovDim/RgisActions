@@ -1,4 +1,4 @@
-﻿name: Push and build docker image
+﻿name: Push, build and test docker image
 
 on: 
     push:
@@ -28,3 +28,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: dmitryershovferi/rgis-2:latest, dmitryershovferi/rgis-2:${{ github.sha }}
+
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
