@@ -21,7 +21,7 @@ namespace RGIS.Pages
 
         public void OnGet()
         {
-            //_context.Database.EnsureDeleted();
+           // //_context.Database.EnsureDeleted();
             _context.Database.EnsureCreated();
 
             //_context.knjigas.Add(new Knjiga("Doglapan", "Ashneer Grover", "This is the unfettered story of Ashneer Grover-the favourite and misunderstood poster boy of Start-up India.", "Biography"));
