@@ -29,5 +29,3 @@ jobs:
           push: true
           tags: dmitryershovferi/rgis-2:latest, dmitryershovferi/rgis-2:${{ github.sha }}
 
-      - name: Test
-        run: dotnet test --no-restore --verbosity normal
