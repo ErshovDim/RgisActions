@@ -25,4 +25,19 @@ public class Knjiga {
 		this. kategorija = kategorija;
     }
 
+    public void ChangePregled(string pregled) 
+    {
+        this.pregled = pregled;
+    }
+
+    public string GetKategorija()
+    { 
+        return this.kategorija; 
+    }
+
+    public void DeletePregled()
+    {
+        this.pregled = "";
+    }
+
 }
